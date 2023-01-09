@@ -18,3 +18,23 @@ int main()
    printf("\nReverse of Input Integer: %d",rev);
     return 0;
 }
+
+
+// 2ND WAY TO DO
+
+#include <stdio.h>
+
+int reverse(int num) {
+    int result = 0;
+    while (num > 0) {
+        result = (result * 10) + (num % 10);
+        num /= 10;
+    }
+    return result;
+}
+
+int main() {
+    int num = 12345;
+    printf("The reverse of %d is %d\n", num, reverse(num));
+    return 0;
+}

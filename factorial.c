@@ -1,4 +1,4 @@
-// Write a program to convert from binary to decimal.
+// Write a program of factorial.
 //6 
 //1*2*3*4*5*6
 #include <stdio.h>
@@ -15,4 +15,22 @@ int main()
 
     return 0;
 }
+// Write a program of factorial.
+//6 
+//1*2*3*4*5*6
+#include <stdio.h>
+int fact(int n){
+    if(n==1){
+        return 1;
+    }
+    return n*fact(n-1);
+}
+int main()
+{
+    int n;
+    printf("Enter a Number :");
+    scanf("%d",&n);
+    printf("\nFactorial is %d",fact(n));
 
+    return 0;
+}
